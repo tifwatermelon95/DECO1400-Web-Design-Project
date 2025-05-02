@@ -5,15 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 
     <style>
         .notification-bar{
             background-color: #5b7a4a;
             color: White;
-            padding: 10px;
+            padding: 8px;
             text-align: center;
             font-size: 16px;
             font-weight: bold;
+            border-color: rgba(107, 56, 56, 0.469);
+            border-style: solid;
         }
 
         .top-bar{
@@ -36,14 +41,16 @@
         }
 
         .title h1 {
-            margin: 0;
-            font-size: 32px;
+            margin:0;
+            font-size: 36px;
         }
 
         .title p {
             margin:0;
             font-style: italic;
-            font-size: 14px;
+            font-weight: bold;
+            font-size: 18px;
+            margin-top: 5px;
         }
 
         .account-cart {
@@ -56,10 +63,31 @@
         .nav-bar{
             display: flex;
             justify-content: space-evenly;
-            padding: 15px 0;
+            padding: 10px 0;
             font-size: 16px;
             font-weight: bold;
-            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            height: 40px;
+            margin-bottom: 0;
+        }
+
+        .hero-strip {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            box-sizing:border-box;
+            gap: 0;
+            border:#5b7a4a solid 1px;
+           
+        }
+
+        .hero-strip img {
+            width: 33.3%;
+            max-width: 300px;
+            height: auto;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 0px;
         }
 
     </style>
@@ -73,8 +101,11 @@
         </div>
 
             <div class = "top-bar">
-                <input type = "text" placeholder = "Search" class = "search-bar">
-                
+                 <!-- ✅ Search section with icon -->
+                <div class="search-wrapper">
+                    <input type="text" placeholder="Search" class="search-bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
                 <div class = "account-cart">
                     <p> ACCOUNT</p>
                     <span class = "cart-icon">🛒</span>
@@ -86,8 +117,7 @@
                 <h1>CIRCULARITY</h1>
                 <p>Dress Hires</p>
             </div>
-        
-               
+           
             <div class = "nav-bar">
                 <p> How It Work </p>
                 <p> Dresses for Hire </p>
@@ -96,8 +126,20 @@
                 <p> About Us </p>
                 <p> Contact Us </p>
             </div>
+            
 
-    </div>    
+    </div> 
+    
+    <div class = "hero-strip">
+        <img src="Images/DSC_7334_2.png" alt="Hero Image">
+        <img src="Images/Green Dress Flower.jpeg" alt="Hero Image">
+        <img src="Images/Red Dress.jpg" alt="Hero Image">
+
+    </div>
+    <div>
+        <p> Affordable designer dress for every occasion –<br>
+        because looking good shouldn’t cost the earth</p>
+    </div>
 
     
 
