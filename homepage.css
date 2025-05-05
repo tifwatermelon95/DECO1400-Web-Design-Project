@@ -1,10 +1,158 @@
-.title{
-    font-size: 2em;
-    color: #333;
+/* Header */
+
+.notification-bar{
+    background-color: #5b7a4a;
+    color: White;
+    padding: 8px;
     text-align: center;
-    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-color: rgba(107, 56, 56, 0.469);
+    border-style: solid;
 }
 
-body{
-    background-color: lightgreen;
+.top-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: white;
 }
+
+.search-bar {
+    padding: 8px;
+    font-size: 14px;
+    width: 200px;
+    border: 1px solid #ccc;
+}
+
+.title {
+    text-align: center;
+}
+
+.title h1 {
+    margin:0;
+    font-size: 36px;
+}
+
+.title p {
+    margin:0;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.account-cart {
+    display: flex;
+    font-family: "Archivo", sans-serif;
+    align-items: center;
+    gap: 15px;
+    font-weight: bold;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    height: 40px;
+    margin-bottom: 0;
+    font-family: "Archivo", sans-serif;
+    font-style: light;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Hero Image & Slogan */
+
+.hero-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-strip {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    box-sizing:border-box;
+    gap: 0;
+    margin-top: 10px;
+    border: 1.8px solid rgb(81, 76, 76);
+    border-radius: 3px;
+}
+
+.hero-strip img {
+    width: 33.3%;
+    max-width: 500px;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    margin: 0;
+}
+
+.hero-slogan {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.953);
+    font-family: "Playwrite DE SAS", cursive;
+    font-style: normal;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 20px;
+    width: 80%;
+    top: 50%;
+    text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.company-message {
+    font-size: 14px;
+    font-family: "Archivo", sans-serif;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+
+/* Dropdown Menu Nav Bar */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0px 8px 12px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: 1px solid #ccc;
+  }
+  
+  .dropdown-content a {
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: black;
+    font-family: "Archivo", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Show dropdown on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Optional underline */
+  .dropdown:hover .nav-item {
+    text-decoration: underline;
+    text-shadow: 3 5px 8px rgba(164, 113, 113, 0.6);
+  }
+  

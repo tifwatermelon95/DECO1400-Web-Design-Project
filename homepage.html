@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href= "homepage.css">
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Archivo:ital,wght@0,100..900;1,100..900&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders:opsz,wght@10..72,100..900&family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@400..700&family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&family=Playwrite+DE+SAS:wght@100..400&display=swap" rel="stylesheet">
 
 
     <style>
@@ -55,6 +58,7 @@
 
         .account-cart {
             display: flex;
+            font-family: "Archivo", sans-serif;
             align-items: center;
             gap: 15px;
             font-weight: bold;
@@ -64,11 +68,20 @@
             display: flex;
             justify-content: space-evenly;
             padding: 10px 0;
-            font-size: 16px;
-            font-weight: bold;
             border-bottom: 1px solid #ccc;
             height: 40px;
             margin-bottom: 0;
+            font-family: "Archivo", sans-serif;
+            font-style: light;
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        .hero-container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .hero-strip {
@@ -77,18 +90,42 @@
             justify-content: center;
             box-sizing:border-box;
             gap: 0;
-            border:#5b7a4a solid 1px;
-           
+            margin-top: 10px;
+            border: 1.8px solid rgb(81, 76, 76);
+            border-radius: 3px;
         }
 
         .hero-strip img {
             width: 33.3%;
-            max-width: 300px;
+            max-width: 500px;
             height: auto;
             object-fit: cover;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            margin: 0px;
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+            margin: 0;
         }
+
+        .hero-slogan {
+            position: absolute;
+            color: rgba(255, 255, 255, 0.953);
+            font-family: "Playwrite DE SAS", cursive;
+            font-style: normal;
+            font-size: 24px;
+            text-align: center;
+            padding-top: 20px;
+            width: 80%;
+            top: 50%;
+            text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        .company-message {
+            font-size: 14px;
+            font-family: "Archivo", sans-serif;
+            font-weight: bold;
+            padding: 0 10px;
+        }
+
+
+    
 
     </style>
     </head>
@@ -119,8 +156,16 @@
             </div>
            
             <div class = "nav-bar">
-                <p> How It Work </p>
-                <p> Dresses for Hire </p>
+                <p> How It Works </p>
+                <div class="dropdown">
+                    <p class="nav-item">Dresses for Hire <i class="fa-solid fa-chevron-down"></i></p>
+                    <div class="dropdown-content">
+                      <a href="#">Wedding Guest Dresses</a>
+                      <a href="#">Party + Going Out Dresses</a>
+                      <a href="#">Floral Dresses</a>
+                      <a href="#">Cocktail Dresses</a>
+                    </div>
+                  </div>
                 <p> Brands </p>
                 <p> Book a Try On </p>
                 <p> About Us </p>
@@ -129,16 +174,21 @@
             
 
     </div> 
-    
-    <div class = "hero-strip">
-        <img src="Images/DSC_7334_2.png" alt="Hero Image">
-        <img src="Images/Green Dress Flower.jpeg" alt="Hero Image">
-        <img src="Images/Red Dress.jpg" alt="Hero Image">
+    <div class = "hero-container">
+        <div class = "hero-strip">
+            <img src="Images/DSC_7334_2.png" alt="Hero Image">
+            <img src="Images/Green Dress Flower.jpeg" alt="Hero Image">
+            <img src="Images/Red Dress.jpg" alt="Hero Image">
+        </div>
 
+        <div class = "hero-slogan">
+            <p>"Affordable designer dress for every occasion –<br>
+                because looking good shouldn’t cost the earth..."</p>
+           </div>
     </div>
+    
     <div>
-        <p> Affordable designer dress for every occasion –<br>
-        because looking good shouldn’t cost the earth</p>
+        <p class = "company-message"> Find that perfect dress for every occasion — from weddings to school formals and everything in between. <br> Our curated collection of designer rentals lets you wear what you love, whenever you want. <br> Style that empowers you and supports a circular future. </p>
     </div>
 
     
