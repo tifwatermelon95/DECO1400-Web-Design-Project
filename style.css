@@ -28,11 +28,13 @@
 
 .title {
     text-align: center;
+    font-family: "Archivo", sans-serif;
 }
 
 .title h1 {
     margin:0;
-    font-size: 36px;
+    font-size: 48px;
+
 }
 
 .title p {
@@ -59,9 +61,16 @@
     height: 40px;
     margin-bottom: 0;
     font-family: "Archivo", sans-serif;
+    font-size: 18px;
     font-style: light;
     font-weight: 600;
     font-style: normal;
+}
+
+.nav-bar p:hover {
+    text-decoration: underline;
+    text-shadow: 3px 5px 8px rgba(214, 220, 216, 0.6);
+    font-style: bold;
 }
 
 /* Hero Image & Slogan */
@@ -103,17 +112,17 @@
     width: 80%;
     top: 50%;
     text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.7);
-
-    font-size: 3vw; /* Responsive font size */
+    font-size: 2.5vw; /* Responsive font size */
     line-height: 1.6;
 }
 
 .company-message {
-    font-size: 14px;
+    font-size: 16px;
     font-family: "Archivo", sans-serif;
     font-weight: bold;
-    padding: 0 10px;
+    padding: 10px 10px;
     margin-bottom: 20px;
+    text-align:center;
 }
 
 
@@ -127,24 +136,24 @@
   .dropdown-content {
     display: none;
     position: absolute;
+    z-index: 1;
     background-color: white;
     min-width: 200px;
     box-shadow: 3px 8px 12px rgba(3,3,3,6);
-    z-index: 1;
     border: 1px solid #928d8d;
   }
   
   .dropdown-content a {
     display: block;
-    padding: 12px 16px;
+    padding: 12px 5px;
     text-decoration: none;
     color: black;
     font-family: "Archivo", sans-serif;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
   }
   
-  .dropdown-content a:hover {
+  .dropdown-content a:hover{
     background-color: #f1f1f1;
   }
   
@@ -164,17 +173,21 @@
   .how-it-works {
     display: flex;
     flex-direction: column;
-    padding: 15px;
+    padding: 15px 30px;
     font-family: "Archivo", sans-serif;
     font-weight: bold;
     font-size: 18px;
     border:rgba(0, 0, 0, 0.2) solid 1px;
     background-color: #eaf1db;
+    margin-bottom: 20px;
+    gap: 20px;
   }
+
   .how-it-works h2{
     text-align: center;
-    font-size: 24px;
+    font-size: 35px;
     margin-bottom: 20px;
+    margin-top: 10px;
   }
   
   .how-it-works-steps{
@@ -239,8 +252,7 @@
   .top-picks {
     display: flex;
     flex-direction: column;
-    padding: 10px 0;
-    height: 40px;
+    padding: 5px 0px;
     margin-bottom: 0;
     font-family: "Archivo", sans-serif;
     font-style: light;
@@ -250,9 +262,9 @@
   }
 
   .top-picks h2{
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 35px;
+    margin-bottom: 10px;
+    text-align: center
   }
 
   .dress-container{
@@ -298,5 +310,31 @@
     box-shadow: 0px 2px 4px rgba(130, 126, 126, 0.2);
     min-width: 35px;
     min-height:auto;
+  }
+
+  .visit{
+    background-color: #eaf1db;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    font-family: "Archivo", sans-serif;
+    border:rgba(0, 0, 0, 0.2) solid 1px;
+    line-height: 1px;
+    padding: 30px 0;
+  }
+
+  .visit h2{
+    font-size: 38px;
+    margin-bottom: 25px;
+  }
+
+
+  .visit span:hover {
+    text-decoration: underline;
+    font-style: bold;
+    color: #5b7a4a;
+    cursor: pointer;
   }
 
