@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <link rel="stylesheet" href= "style.css">
+    <!-- Linking Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Linking Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Archivo:ital,wght@0,100..900;1,100..900&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders:opsz,wght@10..72,100..900&family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@400..700&family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&family=Playwrite+DE+SAS:wght@100..400&display=swap" rel="stylesheet">
@@ -116,15 +118,22 @@
 
       <section class = "top-picks">
         <h2>Top Picks</h2>
-        <div class = "dress-container">
+        
+        <!-- Dress Carousel (Horizontal Scroll Function)-->
+        <div class = "dress-container" id = "dressContainer">
+
+          <button class="carousel-arrow prev">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+
             <div class = "dress-card">
                 <img src="Images/DSC_6522-3.png" alt="Dress 1">
                 <p>Leo Lin - Sammie Dress </p>
                 <p> RRP: $79.00 </p>
                 <div class = "sizing">
-                  <p class = "size">6</p>
-                  <p class = "size">8</p>
-                  <p class = "size">10</p>
+                  <button class = "size">6</button>
+                  <button class = "size">8</button>
+                  <button class = "size">10</button>
                 </div>
             </div>
             <div class = "dress-card">
@@ -132,22 +141,38 @@
                 <p>Meshki - Navy Blue Dress</p>
                 <p> RRP: $115.00 </p>
                 <div class = "sizing">
-                  <p class = "size">6</p>
-                  <p class = "size">8</p>
-                  <p class = "size">10</p>
+                  <button class = "size">6</button>
+                  <button class = "size">8</button>
+                  <button class = "size">10</button>
                 </div>
             </div>
             <div class = "dress-card">
                 <img src="Images/Brown Dress.jpg" alt="Dress 3">
                 <p> Perfect Stranger - Rosetta Off Shoulder Long Sleeve Maxi Ash Brown </p>
                 <p> RRP: $99.00 </p>
-                <div class = "sizing">
-                  <p class = "size">6</p>
-                  <p class = "size">8</p>
-                  <p class = "size">10</p>
+                <div class = "sizing">     
+                  <button class = "size">6</button>
+                  <button class = "size">8</button>
+                  <button class = "size">10</button>
                 </div>
             </div>
+
+            <div class = "dress-card">
+                <img src="Images/Blue Hair Birthday White Dress.jpg" alt="Dress 4">
+                <p> Lucy In The Sky - White Dress </p>
+                <p> RRP: $69.00 </p>
+                <div class = "sizing">     
+                  <button class = "size">6</button>
+                  <button class = "size">8</button>            
+                </div>
+            </div>
+
+            <button class="carousel-arrow next">
+              <i class="fa-solid fa-chevron-right"></i>
+              </button>
         </div>
+         
+       
 
       </section>
 
@@ -159,8 +184,8 @@
       </section>
       
 
-    
-
+      <!-- Interactive elements -->
+      <script src="script.js"></script>
 
 </body>
 
