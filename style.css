@@ -165,8 +165,8 @@ body{
 /* Dropdown Menu Nav Bar */
 
 .dropdown {
-    position: relative;
-    display: inline-block;
+    position: relative; /* Allows the dropdown to be positioned relative to its parent */
+    display: block; /* Makes the dropdown a block element */
   }
   
   .dropdown-content {
@@ -174,19 +174,19 @@ body{
     position: absolute;
     z-index: 1;
     background-color: white;
-    min-width: 200px;
+    min-width: 320px;
     box-shadow: 3px 8px 12px rgba(3,3,3,6);
     border: 1px solid #928d8d;
   }
   
   .dropdown-content a {
     display: block;
-    padding: 12px 5px;
+    padding: 20px 15px; /*padding top bottom 12px, right left 5px*/
     text-decoration: none;
     color: black;
     font-family: "Archivo", sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 1.4vh;
   }
   
   .dropdown-content a:hover{
@@ -414,7 +414,7 @@ body{
       font-family: "Archivo", sans-serif;
       border: rgba(0, 0, 0, 0.2) solid 1px;
       line-height: 1px;
-      padding: 15px 30px;
+      padding: 15px 0px 30px 0px; /*top right bottom left*/
   }
 
   .visit h2 {
