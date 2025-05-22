@@ -1,3 +1,4 @@
+/*Horizontal scrolling carousel for the dress section of the website.*/
 let scrollContainer = document.getElementById("dressCarousel");
 let backBtn = document.getElementById("backBtn");
 let forwardBtn = document.getElementById("nextBtn");
@@ -22,3 +23,5 @@ nextBtn.addEventListener("click", (event) => {
         behavior: "smooth"
     })
 });
+
+

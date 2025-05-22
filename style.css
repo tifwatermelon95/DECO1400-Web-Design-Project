@@ -1,10 +1,31 @@
-/* Header - Includes Brand Name & Navigation Bar & Announcement Bar*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 
+p, a {
+    font-family: "Archivo", sans-serif;
+    font-weight: 600;
+    font-style: bold;
+}
+
+h2 {
+    font-family: "Archivo", sans-serif;
+    font-size: 1.8em;
+    font-weight: 700;
+    font-style: bold;
+    line-height: 0.5;
+    margin: 10px 0px 10px 0px;
+    text-align: center;
+}
+
+/* Header - Includes Brand Name & Navigation Bar & Announcement Bar*/
 .header{
-  position: sticky;
-  top: 0;
-  background-color: white;
-  z-index: 1000; /* Ensures the header is above other content */
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1000; /* Ensures the header is above other content */
 }
 
 .notification-bar{
@@ -22,48 +43,50 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    padding: 10px 20px 0px 20px; /*top right bottom left*/
     background-color: white;
 }
 
 .search-bar {
-    padding: 8px;
-    font-size: 1.5vh;
+    padding: 6px;
     width: 200px;
     border: 1px solid #ccc;
+    box-shadow: 0px 2px 4px rgba(130, 126, 126, 0.2);
 }
 
 .fa-magnifying-glass {
-    font-size: 1.5vh;
     color: #969a93;
+}
+
+.fa-cart-shopping:hover {
+    color: #5b7a4a;
+    cursor: pointer;
 }
 
 .title {
     text-align: center;
     font-family: "Archivo", sans-serif;
+    font-weight:bold;
+    color: #143b08;
 }
 
 .title h1 {
     margin:0;
-    font-size: 4vh;
-
+    font-size: 2.7em;
 }
+
+.title h1 a {
+    text-decoration: none;
+    color: inherit;
+}
+
 
 .title p {
     margin:0;
     font-style: italic;
     font-weight: bold;
-    font-size: 2vh;
+    font-size: 1em;
     margin-top: 5px;
-}
-
-.account-cart {
-    display: flex;
-    font-family: "Archivo", sans-serif;
-    font-size: 1.5vh;
-    align-items: center;
-    gap: 15px;
-    font-weight: bold;
 }
 
 .nav-bar {
@@ -81,11 +104,21 @@
     z-index:1000;
 }
 
-.nav-bar p:hover {
+.nav-bar a {
+    color: #5b7a4a;
+    justify-content: space-between;
+    padding: 10px 20px; /*top right bottom left*/
+    font-family: "Archivo", sans-serif;
+
+    font-size: 0.4em;
+}
+
+.nav-bar a:hover {
     text-decoration: underline;
     text-shadow: 3px 5px 8px rgba(214, 220, 216, 0.6);
     font-style: bold;
 }
+
 
 /* Hero Image & Slogan */
 
@@ -98,8 +131,8 @@
 }
 
 /* Creating the dark overlay */
-.hero-container::before {
-    content: "";
+.hero-container::after { /* :before is a pseudo-ELEMENT (not class) that allows us to add an overlay */
+    content: ""; /* Required for pseudo-elements */
     position: absolute;
     top: 5px;
     width: 100%;
@@ -110,9 +143,8 @@
 
 .hero-strip {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
-    box-sizing-container:border-box;
     gap: 0;
     margin-top: 5px;
     border: 1.8px solid rgb(81, 76, 76);
@@ -136,17 +168,16 @@
     font-weight: bold;
     font-style: italic;
     text-align: center;
-    top:60%;
+    top: 70%;
     right: 20%;
-    padding: 20px 60px; /*top right bottom left*/
     text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.7);
-    font-size: 200px; /* Responsive font size */
+    font-size: 1.2em;
     line-height: 1.6;
     z-index: 2;
 }
 
-.company-message {
-    font-size: 18px;
+.company-message p {
+    font-size: 0.8em;
     line-height: 1.3;
     font-family: "Archivo", sans-serif;
     font-weight: bold;
@@ -159,28 +190,29 @@
 /* Dropdown Menu Nav Bar */
 
 .dropdown {
-    position: relative; /* Allows the dropdown to be positioned relative to its parent */
-    display: block; /* Makes the dropdown a block element */
+    align-items: center;
+    display: flex; /* Makes the dropdown a block element */
   }
   
   .dropdown-content {
     display: none;
     position: absolute;
+    top: 100%; /* Positions the dropdown below the parent ('Dresses for Hire') button */
     z-index: 1;
     background-color: white;
-    min-width: 320px;
+    min-width: 250px; /* Sets a minimum width for the dropdown */
     box-shadow: 3px 8px 12px rgba(3,3,3,6);
     border: 1px solid #928d8d;
   }
   
   .dropdown-content a {
     display: block;
-    padding: 20px 15px; /*padding top bottom 12px, right left 5px*/
+    padding: 15px 8px 15px 8px; /*padding top bottom 12px, right left 5px*/
     text-decoration: none;
     color: black;
     font-family: "Archivo", sans-serif;
     font-weight: 400;
-    font-size: 1.4vh;
+    font-size: 0.4em;
   }
   
   .dropdown-content a:hover{
@@ -211,11 +243,6 @@
     background-color: #eaf1db;
     gap: 20px;
   }
-
-  .how-it-works h2{
-    text-align: center;
-    font-size: 3dvh;
-  }
   
   .how-it-works-steps{
     display: flex;
@@ -232,7 +259,7 @@
 
   .icon-title{
     text-align: center;
-    margin-bottom: 1px;
+    margin: 10px 0px 5px 0px;
   }
 
   .icon-circle{
@@ -249,7 +276,7 @@
   }
 
   .icon-description{
-    font-size: 1.5vh;
+    font-size: 0.8em;
     text-align: center;
   }
 
@@ -261,11 +288,11 @@
     display:flex;
     text-align: center;
     justify-content: center;
-    padding: 1.3em 4.5em;
+    padding: 1.2em 4.4em;
     width: fit-content;
     border: none;
     cursor: pointer;
-    font-size: 1.5vh;
+    font-size: 0.9em;
   }
 
   .faq-btn:hover {
@@ -278,23 +305,18 @@
   /* Top Picks Dress Cards */
 
   .top-picks {
-      padding: 20px 30px 60px 30px; /*top right bottom left*/
+      padding: 20px 30px 2px 30px; /*top right bottom left*/
       font-family: "Archivo", sans-serif;
       font-weight: 600;
-      min-height: 20vh;
-  }
-
-  .top-picks h2 {
-      font-size: 3vh;
-      margin-bottom: 20px;
-      text-align: center;
   }
 
   /* Carousel Styling */
   .dress-carousel {
       position: relative;
       width: 100%;
-      margin: 0 auto;
+      margin: 0;
+      padding: 0;
+
   }
 
   /* This is the container that holds all dress cards */
@@ -302,7 +324,7 @@
       display: flex;
       flex-wrap: nowrap;
       overflow-x: auto;
-      padding: 10px 30px;
+      padding: 5px 10px 5px 10px; /*top right bottom left*/
       gap: 20px;
       scroll-behavior: smooth;
       scrollbar-width: none;
@@ -330,6 +352,14 @@
       background-color: white;
       text-align: center;
       transition: transform 0.3s;     
+  }
+
+  .dress-card p{
+        font-size: 0.8em;
+        font-family: "Archivo", sans-serif;
+        font-weight: 500;
+        margin: 10px 0px 0px 0px;
+        line-height: 1.2;
   }
 
   .dress-card:hover {
@@ -421,7 +451,6 @@
   /* Visit Section */
   .visit {
       background-color: #eaf1db;
-      margin-bottom: 20px;
       display: flex;
       flex-direction: column;
       text-align: center;
@@ -432,18 +461,11 @@
       padding: 15px 0px 30px 0px; /*top right bottom left*/
   }
 
-  .visit h2 {
-      font-size: 3vh;
-      margin-bottom: 25px;
+  .visit h3 {
+      font-size: 0.7em;
+      margin: 10px 0px 0px 0px;
       line-height: 0.5;
   }
-
-  .visit h3, p {
-      font-size: 1.5vh;
-      margin: 0;
-      line-height: 1.5
-  }
-
 
   .visit span:hover {
       text-decoration: underline;
@@ -451,3 +473,36 @@
       color: #5b7a4a;
       cursor: pointer;
   }
+
+  /* About Us Section */
+    .about-us h1 {
+        font-size: 2.5em;
+        font-family: "Anton", sans-serif;
+        font-weight: 200;
+        font-style: bold;
+        text-align: center;
+        margin: 30px 0px 20px 0px;
+    }
+
+    .about-us-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 30px; /*top right bottom left*/
+    }
+
+
+    .about-us-content img {
+        width: 30%;
+        height: auto;
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+    }
+
+    .about-us-content p {
+        width: 40%;
+        padding: 10px 20px; /*top right bottom left*/
+    }
+        
