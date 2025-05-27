@@ -64,7 +64,7 @@
         </div> 
 
         <!-- Page Title -->
-        <div class="page-title">
+        <div class="body-content">
             <h1>How It Works</h1>
             
             <!--FAQ Accordian Style Q&A Section-->
@@ -202,14 +202,18 @@
 
         </div>
         <script>
-            const accordion = document.getElementsByClassName('contentBx');
-            for (let i = 0; i < accordion.length; i++) {
-                accordion[i].addEventListener('click', function() {
-                    this.classList.toggle('active');
+        /*
+        Implementation of accordion in How It Works Page
+        Allows the contentBx section to expand or collapse when clicked.
+        */
+        const accordion = document.getElementsByClassName('contentBx'); //when contentBx clicked
+            for (let i = 0; i < accordion.length; i++) { //loops through each element in the accordion section
+                accordion[i].addEventListener('click', function() { //+ a click event listener f/e element
+                    this.classList.toggle('active'); //'this' is the clicked element, toggles item to active
+                    //it also removes the actie class if it is already there
                 });
-            }
+        }
         </script>
-
     </body>
 
 </html>

@@ -166,16 +166,13 @@ text-decoration: underline;
 text-shadow: 3 5px 8px rgba(164, 113, 113, 0.6);
 }
 
-
-
-
-/* Page Title */
-.page-title h1 {
+.body-content h1 {
     font-size: 2.5em;
     font-family: "Anton", sans-serif;
     font-weight: 200;
     font-style: bold;
     text-align: center;
+    justify-content: center;
     margin: 30px 0px 20px 0px;
 }
 
@@ -220,27 +217,5 @@ text-shadow: 3 5px 8px rgba(164, 113, 113, 0.6);
         font-size: clamp(0.3rem, 0.4vw, 0.5rem); 
     }
 
-    .dress-card img {
-        width: 95%; /* Ensures the image fits within the card & fills it */
-        max-height: 330px;
-        object-fit: cover; /* Crops to fill the container neatly */
-        margin-bottom: 10px;
-    }
-
-    .about-us-content {
-        flex-direction: column;
-        padding: 15px;
-    }
-
-    .about-us-content img{
-        width: 80%;
-    }
-
-    .about-us-content p{
-        font-size: clamp(0.55rem, 1vw, 0.8rem); /* min: 0.75rem, max: 1.1rem */
-        width: 40%;
-        padding: 10px 20px;
-    
-    }
 
 }

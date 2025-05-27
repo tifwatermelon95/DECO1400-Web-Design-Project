@@ -205,12 +205,49 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Dress Cards (No Slider or Padding) */
-.dress-grid {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 10px;
-    margin: 10px 10px 10px 10px;
+
+
+/* Wedding Guest Dresses Page */
+
+/* Dress Cards */
+.wedding-dress-card {
+    padding: 5px; /* Padding b/w each dress card */
+    flex: 0 0 300px; /* Flex-grow, flex-shrink, and flex-basis */
+    max-width: 350px; /* Ensures the card doesn't exceed this width */
+    min-width: 280px;
+}
+
+.wedding-dress-card p{
+    font-size: 0.8em;
+    font-family: "Archivo", sans-serif;
+    font-weight: 500;
+    margin: 10px 0px 0px 0px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.wedding-dress-card img {
+    width: 95%; /* Ensures the image fits within the card & fills it */
+    height: 400px;
+    object-fit: cover; /* Crops to fill the container neatly */
+    margin-bottom: 10px;
+}
+
+.dress-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 10px; /* left right padding*/
+    gap: 20px;
+    justify-content: center;
+    margin: 0 auto;
+} 
+
+@media (max-width: 768px) {
+  .dress-container {
+    flex-direction: column;
+    padding: 0 10px;
+  }
 }
 
 
