@@ -1,0 +1,363 @@
+/* Hero Image & Slogan */
+
+.hero-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Creating the dark overlay */
+.hero-container::after { /* :before is a pseudo-ELEMENT (not class) that allows us to add an overlay */
+    content: ""; /* Required for pseudo-elements */
+    position: absolute;
+    top: 5px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Black with 40% opacity - adjust as needed */
+    z-index: 1; /* Places it above the images but below the text */
+}
+
+.hero-strip {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0;
+    margin-top: 5px;
+    border: 1.8px solid rgb(81, 76, 76);
+    border-radius: 3px;
+    z-index: 0; /* Places it below the text */
+}
+
+.hero-strip img {
+    width: 33.3%; /* Each image takes up 1/3 of the container */
+    min-width: 80px;
+    height: auto; /* Maintain aspect ratio & auto adjusts*/
+    object-fit: cover; /* The image content is scaled to fit the aspect ratio of the container */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    margin: 0;
+}
+
+
+@keyframes fadeIn { /* Cool animation for the hero slogan */
+    from { opacity: 0; transform: translateY(20px); } 
+    /*The translateY(20px) moves the element down by 20 pixels at the start of the animation*/
+    to { opacity: 1; transform: translateY(0); }
+    /*The translateY(0) moves the element back to its original position at the end of the animation*/
+}
+
+.hero-slogan {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.953);
+    font-family: "Archivo";
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    top: 70%;
+    right: 20%;
+    text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.7);
+    font-size: 1.2em;
+    line-height: 1.6;
+    z-index: 2;
+    animation: fadeIn 2s ease-in-out; /* Fade-in animation for cool effect*/
+}
+
+.company-message p {
+    font-size: 0.8em;
+    line-height: 1.3;
+    font-family: "Archivo", sans-serif;
+    font-weight: bold;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+    text-align:center;
+}
+
+/*How It Works Homepage Section*/
+
+.how-it-works {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 30px; /*padding top bottom 15px, right left 30px*/
+    font-family: "Archivo", sans-serif;
+    font-weight: bold;
+    font-size: 2vh;
+    border:rgba(0, 0, 0, 0.2) solid 1px;
+    background-color: #eaf1db;
+    gap: 20px;
+}
+
+.how-it-works-steps{
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    margin-top: 10px;
+}
+
+.icon-box{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-title{
+    text-align: center;
+    margin: 10px 0px 5px 0px;
+}
+
+.icon-circle{
+    min-width: 60px;
+    min-height: 60px;
+    border-radius: 20%;
+    background-color: #5b7a4a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.icon-description{
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.faq-btn {
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    margin: 20px auto 10px;
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    padding: 1.2em 4.4em;
+    width: fit-content;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.faq-btn:hover {
+    background-color: #364b2b;
+    color: white;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
+}
+
+
+/* Top Picks Dress Cards */
+
+.top-picks {
+    padding: 20px 30px 2px 30px; /*top right bottom left*/
+    font-family: "Archivo", sans-serif;
+    font-weight: 600;
+}
+
+/* Carousel Styling */
+.dress-carousel {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* The container that holds all the dress cards */
+#dressCarousel {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 5px 10px 5px 10px; /*top right bottom left*/
+    gap: 20px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    transform: scale(0.9); /* Scales down the carousel */
+}
+
+@media (max-width: 768px) {
+    #dressCarousel {
+    flex: 0 0 50%;
+    }
+}
+
+/*Pseudo-element to hide the scrollbarfor WebKit browsers (e.g. Safari, Edge, Chrome, etc...) */
+#dressCarousel::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Dress Cards */
+.dress-card {
+    padding: 10px;
+    flex: 0 0 25%; /* Flex-grow, flex-shrink, and flex-basis */
+    max-width: 400px; /* Ensures the card doesn't exceed this width */
+    min-width: 300px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    text-align: center;
+    transition: transform 0.3s;     
+}
+
+.dress-card p{
+    font-size: 0.8em;
+    font-family: "Archivo", sans-serif;
+    font-weight: 500;
+    margin: 10px 0px 0px 0px;
+    line-height: 1.2;
+}
+
+.dress-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.3);
+}
+
+.dress-card img {
+    width: 95%;
+    height: 450px;
+    object-fit: cover; /* Ensures the image covers the card in a way that maintains its aspect ratio */
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .dress-card {
+        min-width: 300px; /* Adjusts the minimum width for smaller screens */
+        max-width: 100%; /* Ensures the card takes full width on smaller screens */
+        padding: 15px;
+        flex: 0 0 80%;
+    }
+    .dress-card img {
+        height: 250px; /* Adjusts the image height for smaller screens */
+    }
+}
+
+
+/* Carousel Navigation Arrows */
+.carousel-arrow {
+    position: absolute; /* Allows the arrow to float over the carousel */
+    top: 50%; /* Vertically positions the arrow halfway down the carousel */
+    width: 50px;
+    height: 50px;
+    display: flex; /* Centers the arrow inside*/
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; /* Removes underlines */
+    font-size: 34px;
+    border-radius: 50%;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.previous {
+    left: 25px;
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.next {
+    right: 25px;
+    background-color: #5b7a4a;
+    color: white;
+}
+
+.carousel-arrow:hover {
+    opacity: 0.9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Visit Us Section */
+.visit {
+    background-color: #eaf1db;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    font-family: "Archivo", sans-serif;
+    border: rgba(0, 0, 0, 0.2) solid 1px;
+    line-height: 1px;
+    padding: 15px 0px 30px 0px; /*top right bottom left*/
+}
+
+.visit h3 {
+    font-size: 0.7em;
+    margin: 10px 0px 0px 0px;
+    line-height: 0.5;
+}
+
+.visit span:hover {
+    text-decoration: underline;
+    font-style: bold;
+    color: #5b7a4a;
+    cursor: pointer;
+}
+
+
+/* HOW IT WORKS FAQ PAGE WITH ACCORDION */
+.faq-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.accordion {
+    max-width: 1000px;
+    padding-bottom: 10px;
+}
+
+.accordion h2{
+    text-align: left;
+    font-size: 2em;
+    margin: 10px 20px; 
+    padding-bottom: 10px;
+}
+
+.content p{
+    font-family: "Archivo", sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.3;
+    color: #333;
+}
+
+.accordion .contentBx{
+    position: relative; 
+    margin: 10px 20px;
+}
+
+.accordion .contentBx .label{
+    position: relative;
+    padding: 10px;
+    background: rgb(143, 171, 139);
+    cursor: pointer;
+    font-family: "Archivo", sans-serif;
+}
+
+.accordion .contentBx .label::before{
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;  
+}
+
+    .accordion .contentBx.active .label::before{
+    content: '-';
+}
+
+.accordion .contentBx .content{
+    position: relative;
+    background: #fff;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+}
+
+.accordion .contentBx.active .content{
+    height: auto; /* Allows the content to expand to the correct height*/
+    padding: 10px;
+
+}

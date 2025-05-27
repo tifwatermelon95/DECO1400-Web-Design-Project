@@ -5,7 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>About Us</title>
         <!-- Linking to styling sheet-->
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href= "css/style.css">
+        <link rel="stylesheet" href="css/pages.css">
+        <link rel="stylesheet" href="css/coponents.css">
         <!-- Linking Font Awesome for Icons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <!-- Linking Google Fonts -->
@@ -15,10 +17,50 @@
     </head>
 
     <body>
-        <div class = "header" id = "header"></div> 
+        <!--HEADER inclusive of Announcment Bar, Logo & Nav Bar-->
+        <div class = "header">
+        <div class="notification-bar">
+            LAST MINUTE ORDERS: Book by 2pm Tuesday to receive your dress by the weekend.
+        </div>
+
+            <div class = "top-bar">
+                    <div>
+                    <input type="text" placeholder="Search" class = "search-bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+            <div class="title">
+                <h1><a href="index.html">CIRCULARITY</a></h1>
+                <p>Dress Hires</p>
+            </div>
+           
+            <nav class = "nav-bar">
+
+                <a href = 'how_it_works.html'> How It Works </a>
+
+                <div class="dropdown">
+                  <a href = '#' class = "nav-item">
+                    Dresses for Hire <i class="fa-solid fa-chevron-down"></i>
+                  </a>
+                    <div class="nav-dropdown-menu">
+                      <a href="#">Wedding Guest Dresses</a>
+                      <a href="#">Party + Going Out Dresses</a>
+                      <a href="#">Floral Dresses</a>
+                      <a href="#">Cocktail Dresses</a>
+                    </div> 
+                  </div>
+
+                    <a href = '#'> Brands </a>
+                    <a href = '#'> Book a Try On </a>
+                    <a href = 'about_us.html'> About Us </a>
+                    <a href = '#'> Contact Us </a>
+                
+            </nav>
+            </div> 
         
-        
-        <section class="about-us">
+        <section class="page-title">
             <h1>About Us</h1>
             <div class="about-us-content">
                 <img src="Images/TBar Brunch Smiles.jpg" alt="About Us Image">
@@ -28,6 +70,5 @@
             </section>
     </body>
 
-    <script src ="header.js"></script>
 
 </html>
