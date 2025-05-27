@@ -11,3 +11,6 @@ https://blog.hubspot.com/website/css-fade-in
 
 Learning how to create an Accordion for 'How It Works' dropdown box/content for Q&A:
 https://www.youtube.com/watch?v=dPLHi7tsoFU
+
+Horizontal scrolling using Javascript:
+https://www.youtube.com/watch?v=gzXyRa7jwk4&t=107s
