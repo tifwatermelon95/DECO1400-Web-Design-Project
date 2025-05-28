@@ -163,8 +163,6 @@
     /*bottom padding needs to be sufficient enough otherwise gets hidden*/
     padding: 0px 5px 20px 5px; /*top right bottom left*/
     gap: 10px;
-    scroll-behavior: smooth;
-    scrollbar-width: none;
 }
 
 /*Pseudo-element to hide the scrollbarfor WebKit browsers (e.g. Safari, Edge, Chrome, etc...) */
@@ -184,7 +182,7 @@
     text-decoration: none; /* Removes underlines */
     font-size: 30px;
     border-radius: 50%;
-    z-index: 10;
+    z-index: 15;
     cursor: pointer;
 }
 

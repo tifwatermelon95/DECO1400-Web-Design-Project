@@ -28,8 +28,6 @@
     margin-bottom: 10px;
 }
 
-
-
 .sizing-container {
     display: flex;
     justify-content: center;
@@ -84,7 +82,7 @@
 }
 
 .accordion .contentBx{
-    position: relative; 
+    position: relative; /*Any child with position: absolute; will be positioned relative to .contentBx, not to the entire page.*/
     margin: 10px 20px;
 }
 
@@ -101,7 +99,7 @@
     position: absolute;
     top: 50%;
     right: 20px;
-    transform: translateY(-50%);
+    transform: translateY(-50%); /*moves the + up half its height to be centered vertically within parent*/
     font-size: 1.5em;  
 }
 
@@ -109,16 +107,17 @@
     content: '-';
 }
 
-.accordion .contentBx .content{
+
+.accordion .contentBx .content{ /*Before clicking - default. Not active*/
     position: relative;
     background: #fff;
-    height: 0;
-    overflow: hidden;
-    transition: 0.5s;
+    height: 0; /* Collapses the content to zero height, cannot view FAQ answers when inactive*/
+    overflow: hidden; /*Prevents overflow from inside content when collapsed*/
+    transition: 0.5s; /*Gives it the cool transition effect*/
     overflow-y: auto;
 }
 
-.accordion .contentBx.active .content{
+.accordion .contentBx.active .content{ /*After clicking. Active*/
     height: auto; /* Allows the content to expand to the correct height*/
     padding: 10px;
 
