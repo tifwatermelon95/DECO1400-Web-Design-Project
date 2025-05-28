@@ -39,6 +39,7 @@ h2 {
     font-weight: bold;
     border-color: rgba(107, 56, 56, 0.469);
     border-style: solid;
+    transition: opacity 1.5s ease;
 }
 
 .top-bar{
@@ -92,11 +93,10 @@ h2 {
 }
 
 .nav-bar {
-    display: flex;
+    display: flex; 
     justify-content: space-evenly;
     padding: 15px 30px 5px 30px; /*top right bottom left*/
     border-bottom: 2px solid #143b08;
-    min-height: fit-content; /*Dynamically adjusts height of element according to its content*/
     font-family: "Archivo", sans-serif;
     font-size: 2em;
     font-style: bold;
@@ -126,12 +126,12 @@ h2 {
 .dropdown {
     position:relative; /* Allows the dropdown menu to be positioned relative to this parent */
     display: flex;
-    align-items: center;
+    align-items: flex-end;
 }
   
 .nav-dropdown-menu {
-    display: none;
-    position: absolute;
+    display: none; /* Makes sure that this is not actually showing the nav menu*/
+    position: absolute; 
     top: 100%; /* Positions the dropdown below the parent ('Dresses for Hire') button */
     z-index: 1;
     background-color: white;
@@ -145,7 +145,6 @@ h2 {
     padding: 15px 8px 15px 8px; /*padding top bottom 12px, right left 5px*/
     text-decoration: none;
     color: black;
-    font-family: "Archivo", sans-serif;
     font-weight: 400;
     font-size: 0.4em;
 }

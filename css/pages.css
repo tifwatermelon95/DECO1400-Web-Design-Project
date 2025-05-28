@@ -204,7 +204,6 @@
 }
 
 
-
 /* Wedding Guest Dresses Page */
 
 /* Dress Cards */
@@ -278,25 +277,30 @@
 
 /* About Us Page */
 
+.body-content{
+    padding: 10px 30px;
+    margin: 0 50px 50px 50px;
+}
+
 .about-us-content{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    padding: 20px 30px; /*top right bottom left*/
 }
 
 .about-us-content img {
     width: 30%;
-    height: auto;
+    max-height:fit-content;
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
 }
 
 .about-us-content p {
     font-size: 1em;
-    width: 40%;
+    line-height: 1.5;
+    width: 45%;
     padding: 10px 20px; /*top right bottom left*/
 }
 

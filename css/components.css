@@ -114,12 +114,10 @@
     height: 0; /* Collapses the content to zero height, cannot view FAQ answers when inactive*/
     overflow: hidden; /*Prevents overflow from inside content when collapsed*/
     transition: 0.5s; /*Gives it the cool transition effect*/
-    overflow-y: auto;
 }
 
 .accordion .contentBx.active .content{ /*After clicking. Active*/
     height: auto; /* Allows the content to expand to the correct height*/
     padding: 10px;
-
 }
 
