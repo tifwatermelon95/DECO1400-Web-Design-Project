@@ -141,6 +141,19 @@
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
 }
 
+@media screen and (max-width:768px){
+    .how-it-works-steps {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    }
+
+    .icon-box {
+        width: 90%;
+    }
+}
+
+
 
 /* HOMEPAGE - Top Picks Dress Cards Section */
 
@@ -168,6 +181,26 @@
 /*Pseudo-element to hide the scrollbarfor WebKit browsers (e.g. Safari, Edge, Chrome, etc...) */
 #dressCarousel::-webkit-scrollbar {
     display: none;
+}
+
+@media screen and (max-width: 768px) {
+    #dressCarousel {
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: visible;
+    align-items: center;
+    }
+
+    .dress-card {
+    width: 90%;
+    max-width: 350px;
+    margin: 0 auto;
+    }
+
+    .carousel-arrow {
+    display: none;
+    }
+
 }
 
 /* Carousel Navigation Arrows */

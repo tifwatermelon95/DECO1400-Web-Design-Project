@@ -26,6 +26,7 @@ nextBtn.addEventListener("click", (event) => {
     })
 });
 
+
 /*
 Announcement Bar Message Rotation
 */
