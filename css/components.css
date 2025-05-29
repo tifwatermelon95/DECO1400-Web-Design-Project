@@ -1,4 +1,4 @@
-/* Dress Cards */
+/* Dress Cards (Global)*/
 .dress-card {
     padding: 5px; /* Padding b/w each dress card */
     flex: 0 0 35%; /* Flex-grow, flex-shrink, and flex-basis */

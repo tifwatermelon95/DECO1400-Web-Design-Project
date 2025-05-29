@@ -21,3 +21,9 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/clamp
 
 Document: querySelectorAll() method learnt
 https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll
+
+Dress Brands Images (Unsplash)
+https://unsplash.com/photos/a-woman-in-a-white-dress-is-posing-for-a-picture-bY_67TyfSu8
+https://unsplash.com/photos/woman-in-maroon-dress--NyPn9up_7o
+https://unsplash.com/photos/a-woman-in-a-long-dress-walking-down-a-hallway-9kbeSfpdjYs
+https://unsplash.com/photos/a-woman-in-a-dress-standing-on-a-sidewalk-EHf1KhTJC60

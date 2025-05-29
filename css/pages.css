@@ -33,7 +33,7 @@
 .hero-strip img {
     width: 33.3%; /* Each image takes up 1/3 of the container */
     min-width: 80px;
-    height: auto; /* Maintain aspect ratio & auto adjusts*/
+    height: auto; /* MaintainS aspect ratio & auto adjusts*/
     object-fit: cover; /* The image content is scaled to fit the aspect ratio of the container */
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
     margin: 0;
@@ -237,7 +237,34 @@
 }
 
 
-/* Wedding Guest Dresses Page */
+/* Visit Us Section */
+.visit {
+    background-color: #eaf1db;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    font-family: "Archivo", sans-serif;
+    border: rgba(0, 0, 0, 0.2) solid 1px;
+    line-height: 1px;
+    padding: 15px 0px 30px 0px; /*top right bottom left*/
+}
+
+.visit h3 {
+    font-size: 0.7em;
+    margin: 10px 0px 0px 0px;
+    line-height: 0.5;
+}
+
+.visit span:hover {
+    text-decoration: underline;
+    font-style: bold;
+    color: #5b7a4a;
+    cursor: pointer;
+}
+
+
+/* WEDDING GUEST DRESSES PAGE */
 
 /* Dress Cards */
 .wedding-dress-card {
@@ -281,59 +308,31 @@
 }
 
 
-/* Visit Us Section */
-.visit {
-    background-color: #eaf1db;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    font-family: "Archivo", sans-serif;
-    border: rgba(0, 0, 0, 0.2) solid 1px;
-    line-height: 1px;
-    padding: 15px 0px 30px 0px; /*top right bottom left*/
-}
-
-.visit h3 {
-    font-size: 0.7em;
-    margin: 10px 0px 0px 0px;
-    line-height: 0.5;
-}
-
-.visit span:hover {
-    text-decoration: underline;
-    font-style: bold;
-    color: #5b7a4a;
-    cursor: pointer;
-}
-
-
-/* About Us Page */
-
-.body-content{
-    padding: 10px 30px;
-    margin: 0 50px 50px 50px;
-}
+/* ABOUT US PAGE */
 
 .about-us-content{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
+    margin-top: 20px;
 }
 
 .about-us-content img {
-    width: 30%;
-    max-height:fit-content;
+    width: 480px;
+    height: 480px;
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the image fills the container without distortion */
+    object-position: center;
+
 }
 
 .about-us-content p {
-    font-size: 1em;
+    font-size: 1.8vh;
     line-height: 1.5;
-    width: 45%;
+    width: 55%;
     padding: 10px 20px; /*top right bottom left*/
 }
 
@@ -344,7 +343,12 @@
     }
 
     .about-us-content img{
-        width: 60%;
+        max-width: 300px;
+        max-height: 300px;
+        aspect-ratio: 1 / 1;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
     }
 
     .about-us-content p{
@@ -353,4 +357,123 @@
     }
     
 }
- 
+
+
+/* CONTACT US PAGE */
+
+.main-content p{
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Contact Form */
+.contact-form {
+    width: 100%;
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: "Archivo", sans-serif;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row input {
+    flex: 1;
+}
+
+.form-field,
+.form-row input,
+.contact-form textarea { 
+    width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px 18px;
+    border: 1px solid #446b44;
+    border-radius: 20px;
+    background-color: #fff;
+    width: 100%;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #5b7a4a;
+    outline: none;
+}
+
+.contact-form textarea {
+    font-family: "Archivo", sans-serif;
+    border-radius: 20px;
+}
+
+.contact-form button {
+    background-color: #5b7a4a;
+    color: white;
+    border: none;
+    padding: 12px 60px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.contact-form button:hover {
+    background-color: #144f0a;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* DRESS BRANDS PAGE */
+
+.dress-brands {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    padding: 10px;
+}
+
+/* Individual brand card wrapper */
+.brand-card {
+    position: relative;
+    margin: 10px;
+    border-radius: 15px;
+    overflow: hidden;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Image inside the brand card */
+.brand-card img {
+    width: clamp(200px, 30vw, 300px); /* Responsive */
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Brand name text overlay */
+.brand-name {
+    position: absolute;
+    top: 70%;
+    left: 18%;
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+    font-size: 3em;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover: scale both image and text */
+.brand-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.3);
+}
