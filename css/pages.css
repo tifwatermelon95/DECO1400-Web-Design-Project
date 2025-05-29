@@ -290,10 +290,6 @@
     margin-bottom: 10px;
 }
 
-.wedding-dress-card p{
-    padding: 0 !important;
-}
-
 .dress-container {
     display: flex;
     flex-direction: row;
@@ -365,12 +361,6 @@
 
 /* CONTACT US PAGE */
 
-.main-content p{
-    text-align: center;
-    justify-content: center;
-    padding: 20px;
-}
-
 /* Contact Form */
 .contact-form {
     width: 100%;
@@ -381,6 +371,12 @@
     flex-direction: column;
     gap: 20px;
     font-family: "Archivo", sans-serif;
+}
+
+.contact-description {
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .form-row {
@@ -433,6 +429,7 @@
     background-color: #144f0a;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 
 /* DRESS BRANDS PAGE */
 

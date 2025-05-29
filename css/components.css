@@ -1,7 +1,7 @@
 /* Dress Cards (Global)*/
 .dress-card {
     padding: 5px; /* Padding b/w each dress card */
-    flex: 0 0 35%; /* Flex-grow, flex-shrink, and flex-basis */
+    flex: 0 0 25%; /* Flex-grow, flex-shrink, and flex-basis */
     max-width: 80%; /* Ensures the card doesn't exceed this width */
     min-width: 35px;
     text-align: center;  
@@ -23,8 +23,8 @@
 
 .dress-card img {
     width: 95%; /* Ensures the image fits within the card & fills it */
-    height: 400px;
-    object-fit: cover; /* Crops to fill the container neatly */
+    max-height: 320px;
+    object-fit: contain; /* Crops to fill the container neatly */
     margin-bottom: 10px;
 }
 
