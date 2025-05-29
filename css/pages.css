@@ -450,6 +450,21 @@
 }
 
 /* Image inside the brand card */
+
+.brands-msg{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.brands-content{
+    font-family: "Anton", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+    padding: 0 20px;
+    font-size: 1.2em;
+}
 .brand-card img {
     width: clamp(200px, 30vw, 300px); /* Responsive */
     height: auto;

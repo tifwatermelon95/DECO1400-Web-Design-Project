@@ -17,12 +17,18 @@ Horizontal scrolling/slider using Javascript:
 https://www.youtube.com/watch?v=gzXyRa7jwk4&t=107s
 https://www.youtube.com/watch?v=gzXyRa7jwk4
 
-
 Use of Clamping for the Hero-Slogan:
 https://developer.mozilla.org/en-US/docs/Web/CSS/clamp
 
 Document: querySelectorAll() method learnt
 https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll
+
+Use of Pseudo-elements (e.g. ::before & ::after)
+https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements
+
+Making a Dropdown Menu:
+https://www.youtube.com/watch?v=hBbrGFCszU4
+
 
 Dress Brands Images (Unsplash)
 https://unsplash.com/photos/a-woman-in-a-white-dress-is-posing-for-a-picture-bY_67TyfSu8
@@ -38,6 +44,8 @@ https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollBy
 https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll
 https://wpengine.com.au/resources/card-layout-css-grid-layout-how-to/
 https://developer.mozilla.org/en-US/docs/Web/CSS/clamp
+https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns
+https://www.youtube.com/watch?v=g_vXSKbfUiQ 
 
 
 
