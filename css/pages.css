@@ -569,3 +569,208 @@
     padding: 10px;
   }
 }
+
+/* HOW IT WORKS FAQ PAGE WITH ACCORDION */
+.faq-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.accordion {
+    max-width: 1000px;
+    padding-bottom: 10px;
+}
+
+.accordion h2{
+    text-align: left;
+    font-size: 2em;
+    margin: 10px 20px; 
+    padding-bottom: 10px;
+}
+
+.content p{
+    font-family: "Archivo", sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.3;
+    color: #333;
+}
+
+.accordion .contentBx{
+    position: relative; /*Any child with position: absolute; will be positioned relative to .contentBx, not to the entire page.*/
+    margin: 10px 20px;
+}
+
+.accordion .contentBx .label{
+    position: relative;
+    padding: 10px;
+    background: rgb(143, 171, 139);
+    cursor: pointer;
+    font-family: "Archivo", sans-serif;
+}
+
+.accordion .contentBx .label::before{
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%); /*moves the + up half its height to be centered vertically within parent*/
+    font-size: 1.5em;  
+}
+
+.accordion .contentBx.active .label::before{
+    content: '-';
+}
+
+
+.accordion .contentBx .content{ /*Before clicking - default. Not active*/
+    position: relative;
+    background: #fff;
+    height: 0; /* Collapses the content to zero height, cannot view FAQ answers when inactive*/
+    overflow: hidden; /*Prevents overflow from inside content when collapsed*/
+    transition: 0.5s; /*Gives it the cool transition effect*/
+}
+
+.accordion .contentBx.active .content{ /*After clicking. Active*/
+    height: auto; /* Allows the content to expand to the correct height*/
+    padding: 10px;
+}
+
+/* CHECK-OUT CART PAGE */
+
+.continue-shopping {
+    font-size: 0.9rem;
+    text-decoration: underline;
+    color: #000;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: right;
+}
+
+.continue-shopping:hover {
+    color: #5b7a4a; /* Optional hover color */
+}
+
+.cart-page {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: 'Archivo', sans-serif;
+}
+
+.cart-page h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.cart-table {
+    width: 100%;
+    border-top: 2px solid black;
+    margin-bottom: 30px;
+}
+
+.cart-header, .cart-item {
+    display: grid;
+    grid-template-columns: 1.5fr 4.5fr 1fr 0.2fr;
+    align-items: center;
+    text-align: left;
+    font-weight: bold;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+
+.cart-item img {
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.cart-details {
+    flex-grow: 1;
+}
+
+.cart-qty {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-qty button {
+    padding: 4px 10px;
+    font-size: 16px;
+    background: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.cart-qty i {
+    color: #888;
+    cursor: pointer;
+}
+
+.cart-total {
+    font-weight: bold;
+    min-width: 80px;
+    text-align: right;
+}
+
+.cart-note-payment {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.note-section {
+    flex: 2; /* Takes up more space than the checkout box */
+    min-width: 300px;
+}
+
+.note-section textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+.checkout-box {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-end;
+}
+
+.checkout-btn {
+    background-color: black;
+    color: white;
+    padding: 12px 55px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.checkout-btn:hover {
+    background-color: black;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 768px) {
+    .cart-details, .cart-header span{
+        font-size: 0.7rem; /* Adjust font size for smaller screens */
+    }
+    .cart-item img {
+        max-width: 75px; /* Adjust image size for smaller screens */
+    }
+
+    .cart-header, .cart-item {
+        grid-template-columns: 1.5fr 2fr 1.8fr 0.3fr !important;
+    }
+}
