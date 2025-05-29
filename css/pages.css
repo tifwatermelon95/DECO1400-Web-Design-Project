@@ -487,6 +487,7 @@
     justify-content: center;
     gap: 30px;
     padding: 20px;
+    margin: 30px 0 80px 0; /*top right bottom left*/
 }
 
 .appt-content h1{
@@ -494,7 +495,7 @@
     font-size: 2em;
 }
 
-.appt-content button{
+.appt-booking-container button{
     margin-top: 20px;
     background-color: #ebbfcf;
     border: none;
@@ -503,15 +504,55 @@
     padding: 8px 20px;
 }
 
-.appt-content button:hover{
-    background-color: #d9a0b8;
-    cursor: pointer;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
-}
-
 .appt-content img {
-    max-width: 400px;
+    max-width: 340px;
     height: auto;
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
+.appt-booking-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.appt-booking-container input{
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px 0 10px 0;
+}
+.avail-times{
+    border: none !important;
+    background-color: #ebbfcf !important;
+    padding: 15px 80px !important;
+    border-radius: 0 !important;
+    width: 75% !important;
+}
+
+.avail-times:hover{
+    background-color: #d89bb1 !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4) !important;
+}
+
+@media screen and (max-width: 768px) {
+  .appt-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .appt-content img {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .appt-booking-container {
+    width: 100%;
+    align-items: center;
+    padding: 10px;
+  }
+}
