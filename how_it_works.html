@@ -198,23 +198,8 @@
 
             </section>
 
-
-
         </div>
-        <script>
-        /*
-        Implementation of accordion in How It Works Page
-        Allows the contentBx section to expand or collapse when clicked.
-        */
-        const accordion = document.getElementsByClassName('contentBx'); //any element with class = contentBx clicked
-            //returns list of all collapsible FAQ items (HTML collection)
-            for (let i = 0; i < accordion.length; i++) { //loops through each FAQ box in the accordion section
-                accordion[i].addEventListener('click', function() { //+ a click event listener f/e element
-                    this.classList.toggle('active'); //'this' is the clicked element, toggles item to active (in CSS)
-                    //it also removes the active class if it is already there
-                });
-        }
-        </script>
+        <script src = "script.js"></script>
     </body>
 
 </html>
