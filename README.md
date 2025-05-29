@@ -1,12 +1,11 @@
 # DECO1400 - Dress Hiring Website Implementation
 
-## 4 JavaScript Usage
+## 4 JavaScript Usages:
 
-> HOMEPAGE - Implementation of horizontal scrolling carousel for the dress section of the Homepage 
-when users click on the back and next buttons.
-> DRESSES FOR HIRE > WEDDING GUEST DRESSES - Implementation of size filtering functionality for wedding guest dresses.
-> HOW IT WORKS PAGE - Implementation of accordion in the Q & A
-> CONTACT FORM PAGE - Pop-up alert when users submit form & resets the form.
+### HOMEPAGE - Implementation of horizontal scrolling carousel for the dress section of the Homepage when users click on the back and next buttons.
+### DRESSES FOR HIRE > WEDDING GUEST DRESSES - Implementation of size filtering functionality for wedding guest dresses.
+### HOW IT WORKS PAGE - Implementation of accordion in the Q & A
+### CONTACT FORM PAGE - Pop-up alert when users submit form & resets the form.
 
 Referencing:
 Learning how to make the header consistent on all pages using js:
