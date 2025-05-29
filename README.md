@@ -7,32 +7,32 @@
 - HOW IT WORKS PAGE - Implementation of accordion in the Q & A
 - CONTACT FORM PAGE - Pop-up alert when users submit form & resets the form.
 
-Referencing:
+##Referencing:
 Learning how to make the header consistent on all pages using js:
-https://www.youtube.com/watch?v=EF9I1-nZcqc
+- https://www.youtube.com/watch?v=EF9I1-nZcqc
 
 Learning how to create a fade-in & upwards animation for the hero-slogan as a cool effect:
-https://blog.hubspot.com/website/css-fade-in
+- https://blog.hubspot.com/website/css-fade-in
 
 Learning how to create an Accordion for 'How It Works' dropdown box/content for Q&A:
-https://www.youtube.com/watch?v=dPLHi7tsoFU
-https://www.w3schools.com/howto/howto_js_accordion.asp
+- https://www.youtube.com/watch?v=dPLHi7tsoFU
+- https://www.w3schools.com/howto/howto_js_accordion.asp
 
 Horizontal scrolling/slider using Javascript:
-https://www.youtube.com/watch?v=gzXyRa7jwk4&t=107s
-https://www.youtube.com/watch?v=gzXyRa7jwk4
+- https://www.youtube.com/watch?v=gzXyRa7jwk4&t=107s
+- https://www.youtube.com/watch?v=gzXyRa7jwk4
 
 Use of Clamping for the Hero-Slogan:
-https://developer.mozilla.org/en-US/docs/Web/CSS/clamp
+- https://developer.mozilla.org/en-US/docs/Web/CSS/clamp
 
 Document: querySelectorAll() method learnt
-https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll
+- https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll
 
 Use of Pseudo-elements (e.g. ::before & ::after)
-https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements
+- https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements
 
 Making a Dropdown Menu:
-https://www.youtube.com/watch?v=hBbrGFCszU4
+- https://www.youtube.com/watch?v=hBbrGFCszU4
 
 
 Dress Brands Images (Unsplash)
