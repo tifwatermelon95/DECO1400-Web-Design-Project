@@ -79,8 +79,12 @@ h2 {
     color: #969a93;
 }
 
-.fa-cart-shopping:hover {
+.fa-cart-shopping{
     color: #5b7a4a;
+}
+
+.fa-cart-shopping:hover {
+    color: #3a562c !important;
     cursor: pointer;
 }
 

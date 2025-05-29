@@ -13,8 +13,7 @@
         <!-- Linking Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Archivo:ital,wght@0,100..900;1,100..900&family=Bebas+Neue&family=Cedarville+Cursive&family=Manrope:wght@200..800&family=Playwrite+DK+Loopet:wght@100..400&family=Prata&display=swap" rel="stylesheet">
-
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Archivo:ital,wght@0,100..900;1,100..900&family=Cedarville+Cursive&family=Lilita+One&family=Manrope:wght@200..800&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Playwrite+DK+Loopet:wght@100..400&family=Prata&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -61,34 +60,52 @@
                 </nav>
             </div>
 
-            <section class="main-content">
-                <h1>Brands</h1>
-                <p>Explore our curated selection of dresses from top brands, 
-                    each offering unique styles and designs. Whether you're looking 
-                    for something classic, trendy, or elegant, we have a brand that fits
-                    your taste.</p>
-                <div class = "dress-brands">
-                    <div class="brand-card">
-                        <img src="images/Aje Dress 1.jpg" alt="Aje Dress">
-                        <div class="brand-name">House of CB</div>
+            <section class="cart-page">
+                <h2>Your Cart</h2>
+                <a href="index.html" class="continue-shopping">Continue Shopping</a>
+                
+                <div class="cart-table">
+                    <div class="cart-header">
+                        <span>PRODUCT</span>
+                        <span>DESCRIPTION </span>
+                        <span>QUANTITY</span>
+                        <span>TOTAL</span>
                     </div>
-                    <div class="brand-card">
-                        <img src="images/Long Red Floral Dress.jpg" alt="Maroon Dress">
-                        <div class="brand-name">Aje</div>
+
+                    <div class="cart-item">
+                        <img src="images/Blue Hair Birthday White Dress.jpg" alt="Product Image" />
+                        <div class="cart-details">
+                            <p>Tiger Mist - White Ruched Mini Dress</p>
+                            <p>$45.00</p>
+                        </div>
+
+                        <div class="cart-qty">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                            <i class="fa-solid fa-trash"></i>
+                        </div>
+
+                        <div class="cart-total">$45.00</div>
                     </div>
-                    <div class = "brand-card">
-                        <img src="images/Zimmerman Dress.jpg" alt="Zimmerman Dress">
-                        <div class="brand-name">Zimmerman</div>
-                    </div>
-                     <div class = "brand-card">
-                        <img src="images/Metallic Green Dress.jpg" alt="Metallic Green Dress">
-                        <div class="brand-name">Arcina Ori</div>
-                    </div>
-                   
                 </div>
-            
+
+                <div class="cart-note-payment">
+                    <div class="note-section">
+                        <label for="order-note">Leave a note with your order</label>
+                        <textarea id="order-note" rows="5" 
+                        placeholder="Add any delivery notes or special requests here..."></textarea>
+                    </div>
+
+                    <div class="checkout-box">
+                    <p>Estimated Total: <strong>$45.00</strong></p>
+                    <button class="checkout-btn">Check Out</button>
+                    </div>
+                </div>
             </section>
-       
+
+            
+
             <script src = "script.js"></script>
                
     </body>

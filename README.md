@@ -13,8 +13,10 @@ Learning how to create an Accordion for 'How It Works' dropdown box/content for 
 https://www.youtube.com/watch?v=dPLHi7tsoFU
 https://www.w3schools.com/howto/howto_js_accordion.asp
 
-Horizontal scrolling using Javascript:
+Horizontal scrolling/slider using Javascript:
 https://www.youtube.com/watch?v=gzXyRa7jwk4&t=107s
+https://www.youtube.com/watch?v=gzXyRa7jwk4
+
 
 Use of Clamping for the Hero-Slogan:
 https://developer.mozilla.org/en-US/docs/Web/CSS/clamp
@@ -27,3 +29,17 @@ https://unsplash.com/photos/a-woman-in-a-white-dress-is-posing-for-a-picture-bY_
 https://unsplash.com/photos/woman-in-maroon-dress--NyPn9up_7o
 https://unsplash.com/photos/a-woman-in-a-long-dress-walking-down-a-hallway-9kbeSfpdjYs
 https://unsplash.com/photos/a-woman-in-a-dress-standing-on-a-sidewalk-EHf1KhTJC60
+
+Tutorials:
+https://www.w3schools.com/jsref/met_document_addeventlistener.asp
+https://www.w3schools.com/css/css3_transitions.asp
+https://developer.mozilla.org/en-US/docs/Web/CSS/overflow
+https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollBy
+https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll
+https://wpengine.com.au/resources/card-layout-css-grid-layout-how-to/
+https://developer.mozilla.org/en-US/docs/Web/CSS/clamp
+
+
+
+
+

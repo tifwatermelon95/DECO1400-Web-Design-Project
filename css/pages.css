@@ -167,7 +167,6 @@
     overflow: hidden;
 }
 
-
 #dressCarousel {/* The container that holds all the dress cards */
     display: flex;
     flex-wrap: nowrap; /*Dress cards cannot wrap around*/
@@ -343,17 +342,15 @@
     }
 
     .about-us-content img{
-        max-width: 300px;
-        max-height: 300px;
-        aspect-ratio: 1 / 1;
+        max-width: 250px;
+        max-height: 250px;
         border-radius: 50%;
         object-fit: cover;
-        object-position: center;
     }
 
     .about-us-content p{
-        font-size: clamp(0.55rem, 2.5vw, 1rem); 
-        width: 60%;
+        font-size: 0.8em;
+        width: 80%;
     }
     
 }
