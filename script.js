@@ -47,4 +47,4 @@ console.log('script.js loaded'); // To check if script is loaded for error debug
 
 
 
-
+/* Date picker*/

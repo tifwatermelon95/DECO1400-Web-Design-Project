@@ -477,3 +477,41 @@
     transform: scale(1.05);
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.3);
 }
+
+
+/* APPOINTMENT PAGE */
+.appt-content{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.appt-content h1{
+    font-family: 'Anton', sans-serif;
+    font-size: 2em;
+}
+
+.appt-content button{
+    margin-top: 20px;
+    background-color: #ebbfcf;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 8px 20px;
+}
+
+.appt-content button:hover{
+    background-color: #d9a0b8;
+    cursor: pointer;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.appt-content img {
+    max-width: 400px;
+    height: auto;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
