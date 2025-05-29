@@ -1,6 +1,7 @@
-/*
-Horizontal scrolling carousel for the dress section of the Homepage.
-*/
+/* INTERACTIVE ELEMENTS*/
+
+
+//Horizontal scrolling carousel for the dress section of the Homepage.
 let scrollContainer = document.getElementById("dressCarousel");
 let backBtn = document.getElementById("backBtn");
 let nextBtn = document.getElementById("nextBtn");
@@ -29,10 +30,8 @@ if (nextBtn && scrollContainer) {
     });
 }
 
-/*
-Announcement Bar Message Rotation
-*/
 
+//Announcement Bar Message Rotation
 const contactForm = document.querySelector('.contact-form');
 if (contactForm) {
     contactForm.addEventListener('submit', function(event) {

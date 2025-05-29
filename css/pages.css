@@ -290,6 +290,10 @@
     margin-bottom: 10px;
 }
 
+.wedding-dress-card p{
+    padding: 0 !important;
+}
+
 .dress-container {
     display: flex;
     flex-direction: row;
