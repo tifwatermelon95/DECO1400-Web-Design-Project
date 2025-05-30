@@ -27,6 +27,28 @@ Wedding Guest page.
 
 
 ## Referencing:
+
+### Dress Images (Unsplash)
+- ZIMMERMANN. (2024, December 1). A woman in a dress standing on a sidewalk [Stock Image]. Unsplash. https://unsplash.com/photos/a-woman-in-a-dress-standing-on-a-sidewalk-EHf1KhTJC60
+- Fashion Lookbook. (2019, September 12). Woman in maroon dress [Stock Image].Unsplash. https://unsplash.com/photos/woman-in-maroon-dress--NyPn9up_7o
+- Mohamed hamdi. (2024, February 2). A woman in a long dress walking down a hallway [Stock Image]. Unsplash. https://unsplash.com/photos/a-woman-in-a-long-dress-walking-down-a-hallway-9kbeSfpdjYs
+- Brian Nguyen. (2021, December 15). A woman in a long dress standing in front of a wall [Photograph]. Unsplash. https://unsplash.com/photos/a-woman-in-a-black-dress-standing-in-front-of-a-wall-fPbebLRVFkM
+- Alison Nerickson. (2022, April 14). A woman in a white dress is posing for a picture [Photograph]. Unsplash. https://unsplash.com/photos/a-woman-in-a-white-dress-is-posing-for-a-picture-bY_67TyfSu8 
+
+### Text Generation (ChatGPT)
+Used for generating the following: 
+- The following tagline “Affordable designer dress for every occasion – because looking
+good shouldn’t cost the earth” shown on the main landing page of the website was
+generated using ChatGPT.
+- The following description written on the main landing page of the website: “Find that
+perfect dress for every occasion — from weddings to school formals and everything in
+between.Our curated collection of designer rentals lets you wear what you love, whenever
+you want. Style that empowers you and supports a circular future.” 
+- Cleaned up the 'About Us' content.
+- The messsage in 'Brands' page - Explore our curated selection of dresses from top brands, each offering unique styles and designs. Whether you're looking for something classic, trendy, or elegant, we have a brand that fits your taste.
+
+> OpenAI. (2025). ChatGPT 4o (Feb 2025 version) [Large Language Model]. https:chat.openai.com/chat
+
 Learning how to make the header consistent on all pages using js:
 - https://www.youtube.com/watch?v=EF9I1-nZcqc
 
@@ -52,30 +74,6 @@ Use of Pseudo-elements (e.g. ::before & ::after)
 
 Making a Dropdown Menu:
 - https://www.youtube.com/watch?v=hBbrGFCszU4
-
-
-### Dress Images (Unsplash)
-- ZIMMERMANN. (2024, December 1). A woman in a dress standing on a sidewalk [Stock Image]. Unsplash. https://unsplash.com/photos/a-woman-in-a-dress-standing-on-a-sidewalk-EHf1KhTJC60
-- Fashion Lookbook. (2019, September 12). Woman in maroon dress [Stock Image].Unsplash. https://unsplash.com/photos/woman-in-maroon-dress--NyPn9up_7o
-- Mohamed hamdi. (2024, February 2). A woman in a long dress walking down a hallway [Stock Image]. Unsplash. https://unsplash.com/photos/a-woman-in-a-long-dress-walking-down-a-hallway-9kbeSfpdjYs
-- Brian Nguyen. (2021, December 15). A woman in a long dress standing in front of a wall [Photograph]. Unsplash. https://unsplash.com/photos/a-woman-in-a-black-dress-standing-in-front-of-a-wall-fPbebLRVFkM
-- Alison Nerickson. (2022, April 14). A woman in a white dress is posing for a picture [Photograph]. Unsplash. https://unsplash.com/photos/a-woman-in-a-white-dress-is-posing-for-a-picture-bY_67TyfSu8 
-
-### Text Generation (ChatGPT)
-Used for generating the following: 
-- The following tagline “Affordable designer dress for every occasion – because looking
-good shouldn’t cost the earth” shown on the main landing page of the website was
-generated using ChatGPT.
-- The following description written on the main landing page of the website: “Find that
-perfect dress for every occasion — from weddings to school formals and everything in
-between.Our curated collection of designer rentals lets you wear what you love, whenever
-you want. Style that empowers you and supports a circular future.” 
-- Cleaned up the 'About Us' content.
-- The messsage in 'Brands' page - Explore our curated selection of dresses from top brands, each offering unique styles and designs. Whether you're looking for something classic, trendy, or elegant, we have a brand that fits your taste.
-
-> OpenAI. (2025). ChatGPT 4o (Feb 2025 version) [Large Language Model]. https:chat.openai.com/chat
-
-
 
 ## Tutorials:
 - https://www.w3schools.com/jsref/met_document_addeventlistener.asp

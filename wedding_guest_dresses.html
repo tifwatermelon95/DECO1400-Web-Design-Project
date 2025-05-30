@@ -15,81 +15,53 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Archivo:ital,wght@0,100..900;1,100..900&family=Cedarville+Cursive&family=Lilita+One&family=Manrope:wght@200..800&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Playwrite+DK+Loopet:wght@100..400&family=Prata&display=swap" rel="stylesheet">
 
-        <style>
-            .size-filter{
-                display: block;
-                line-height: 2;
-                text-align: center;
-                margin: 10px 0 30px 0;
-            }
-
-            .filter-buttons, .all-filter-button{
-                border: 2px solid green;
-                border-radius: 20px;
-                padding: 5px 10px;
-                background-color: rgb(237, 240, 232);
-                gap: 10px;
-                margin: 0px 5px;
-            }
-
-            .filter-buttons:hover, .all-filter-button{
-                background-color: rgb(6, 75, 6);
-                color: white;
-                box-shadow: 0 4px 5px 2px rgba(0, 0, 0, 0.3);
-            }
-
-            
-
-
-        </style>
     </head>
 
     <body>
         <!--HEADER inclusive of Announcment Bar, Logo & Nav Bar-->
-        <div class = "header">
+        <header class="header">
 
-        <div class="notification-bar">
+            <div class="notification-bar">
                 LAST MINUTE ORDERS: Book by 2pm Tuesday to receive your dress by the weekend.
             </div>
 
-                <div class = "top-bar">
-                        <div>
-                        <input type="text" placeholder="Search" class = "search-bar">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        </div>
-                        <i class="fa-solid fa-cart-shopping"></i>
-                </div>
+            <div class="top-bar">
+            <div>
+                <input type="text" placeholder="Search" class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
 
-                <div class="title">
-                    <h1><a href="index.html">CIRCULARITY</a></h1>
-                    <p>Dress Hires</p>
-                </div>
-            
-                <nav class = "nav-bar">
+            <div class="title">
+            <h1><a href="index.html">CIRCULARITY</a></h1>
+            <p>Dress Hires</p>
+            </div>
 
-                    <a href = 'how_it_works.html'> How It Works </a>
+            <nav class="nav-bar">
+                <a href='how_it_works.html'> How It Works </a>
 
-                    <div class="dropdown">
-                    <a href = '#' class = "nav-item">
-                        Dresses for Hire <i class="fa-solid fa-chevron-down"></i>
+                <div class="dropdown">
+                    <a href='#' class="nav-item">
+                    Dresses for Hire <i class="fa-solid fa-chevron-down"></i>
                     </a>
-                        <div class="nav-dropdown-menu">
-                        <a href="wedding_guest_dresses.html">Wedding Guest Dresses</a>
-                        <a href="#">Party + Going Out Dresses</a>
-                        <a href="#">Floral Dresses</a>
-                        <a href="#">Cocktail Dresses</a>
-                        </div> 
+                    <div class="nav-dropdown-menu">
+                    <a href="wedding_guest_dresses.html">Wedding Guest Dresses</a>
+                    <a href="#">Party + Going Out Dresses</a>
+                    <a href="#">Floral Dresses</a>
+                    <a href="#">Cocktail Dresses</a>
                     </div>
+                </div>
 
-                        <a href = 'brands.html'> Brands </a>
-                        <a href = 'appointment.html'> Book a Try On </a>
-                        <a href = 'about_us.html'> About Us </a>
-                        <a href = 'contact_us.html'> Contact Us </a>
-                    
-                </nav>
-            </div> 
+                <a href='brands.html'> Brands </a>
+                <a href='appointment.html'> Book a Try On </a>
+                <a href='about_us.html'> About Us </a>
+                <a href='contact_us.html'> Contact Us </a>
 
-        <section class="main-content">
+            </nav>
+        </header>
+
+        <main class="main-content">
             <h1>Wedding Guest Dresses</h1>
 
             <div class = 'size-filter'>
@@ -133,17 +105,10 @@
                   <div class="sizing-container">
                     <button class="size">6</button>
                     <button class="size">8</button>
-
                   </div>
-                  </div>
+                </div>
             </div>
-
-            
-
-        </section>
-    
+        </main>
     <script src = "script.js"></script>
-
     </body>
-
-    </html>
+</html>

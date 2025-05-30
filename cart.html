@@ -18,95 +18,93 @@
 
     <body>
         <!--HEADER inclusive of Announcment Bar, Logo & Nav Bar-->
-        <div class = "header">
+        <header class="header">
+
             <div class="notification-bar">
                 LAST MINUTE ORDERS: Book by 2pm Tuesday to receive your dress by the weekend.
             </div>
 
-                <div class = "top-bar">
-                        <div>
-                        <input type="text" placeholder="Search" class = "search-bar">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        </div>
-                        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-                </div>
-
-                <div class="title">
-                    <h1><a href="index.html">CIRCULARITY</a></h1>
-                    <p>Dress Hires</p>
-                </div>
-            
-                <nav class = "nav-bar">
-
-                    <a href = 'how_it_works.html'> How It Works </a>
-
-                    <div class="dropdown">
-                    <a href = '#' class = "nav-item">
-                        Dresses for Hire <i class="fa-solid fa-chevron-down"></i>
-                    </a>
-                        <div class="nav-dropdown-menu">
-                        <a href="wedding_guest_dresses.html">Wedding Guest Dresses</a>
-                        <a href="#">Party + Going Out Dresses</a>
-                        <a href="#">Floral Dresses</a>
-                        <a href="#">Cocktail Dresses</a>
-                        </div> 
-                    </div>
-
-                        <a href = 'brands.html'> Brands </a>
-                        <a href = 'appointment.html'> Book a Try On </a>
-                        <a href = 'about_us.html'> About Us </a>
-                        <a href = 'contact_us.html'> Contact Us </a>
-                    
-                </nav>
+            <div class="top-bar">
+            <div>
+                <input type="text" placeholder="Search" class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
             </div>
 
-            <section class="cart-page">
-                <h2>Your Cart</h2>
-                <a href="index.html" class="continue-shopping">Continue Shopping</a>
-                
-                <div class="cart-table">
-                    <div class="cart-header">
-                        <span>PRODUCT</span>
-                        <span>DESCRIPTION </span>
-                        <span>QUANTITY</span>
-                        <span>TOTAL</span>
-                    </div>
+            <div class="title">
+            <h1><a href="index.html">CIRCULARITY</a></h1>
+            <p>Dress Hires</p>
+            </div>
 
-                    <div class="cart-item">
-                        <img src="images/Blue Hair Birthday White Dress.jpg" alt="Product Image" />
-                        <div class="cart-details">
-                            <p>Tiger Mist - White Ruched Mini Dress</p>
-                            <p>$45.00</p>
-                        </div>
+            <nav class="nav-bar">
+                <a href='how_it_works.html'> How It Works </a>
 
-                        <div class="cart-qty">
-                            <button>-</button>
-                            <span>1</span>
-                            <button>+</button>
-                            <i class="fa-solid fa-trash"></i>
-                        </div>
-
-                        <div class="cart-total">$45.00</div>
+                <div class="dropdown">
+                    <a href='#' class="nav-item">
+                    Dresses for Hire <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <div class="nav-dropdown-menu">
+                    <a href="wedding_guest_dresses.html">Wedding Guest Dresses</a>
+                    <a href="#">Party + Going Out Dresses</a>
+                    <a href="#">Floral Dresses</a>
+                    <a href="#">Cocktail Dresses</a>
                     </div>
                 </div>
 
-                <div class="cart-note-payment">
-                    <div class="note-section">
-                        <label for="order-note">Leave a note with your order</label>
-                        <textarea id="order-note" rows="5" 
-                        placeholder="Add any delivery notes or special requests here..."></textarea>
-                    </div>
+                <a href='brands.html'> Brands </a>
+                <a href='appointment.html'> Book a Try On </a>
+                <a href='about_us.html'> About Us </a>
+                <a href='contact_us.html'> Contact Us </a>
 
-                    <div class="checkout-box">
-                    <p>Estimated Total: <strong>$45.00</strong></p>
-                    <button class="checkout-btn">Check Out</button>
-                    </div>
-                </div>
-            </section>
+            </nav>
+        </header>
 
+        <main class="cart-page">
+            <h2>Your Cart</h2>
+            <a href="index.html" class="continue-shopping">Continue Shopping</a>
             
+            <div class="cart-table">
+                <div class="cart-header">
+                    <span>PRODUCT</span>
+                    <span>DESCRIPTION </span>
+                    <span>QUANTITY</span>
+                    <span>TOTAL</span>
+                </div>
 
-            <script src = "script.js"></script>
+                <div class="cart-item">
+                    <img src="images/Blue Hair Birthday White Dress.jpg" alt="Product Image" />
+                    <div class="cart-details">
+                        <p>Tiger Mist - White Ruched Mini Dress</p>
+                        <p>$45.00</p>
+                    </div>
+
+                    <div class="cart-qty">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                        <i class="fa-solid fa-trash"></i>
+                    </div>
+
+                    <div class="cart-total">$45.00</div>
+                </div>
+            </div>
+
+            <div class="cart-note-payment">
+                <div class="note-section">
+                    <label for="order-note">Leave a note with your order</label>
+                    <textarea id="order-note" rows="5" 
+                    placeholder="Add any delivery notes or special requests here..."></textarea>
+                </div>
+
+                <div class="checkout-box">
+                <p>Estimated Total: <strong>$45.00</strong></p>
+                <button class="checkout-btn">Check Out</button>
+                </div>
+            </div>
+        </main>
+
+        <script src = "script.js"></script>
                
     </body>
 
