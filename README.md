@@ -1,7 +1,7 @@
 # DECO1400 - Dress Hiring Website Implementation
 
 ## Link to Figma High-Fidelity Prototype:
-https://www.figma.com/proto/UIU4AFOIREDVb8UtpKKCfk/High-Fidelity-Sketch?node-id=0-1&t=JxMcOIzfiZ0xLgC4-1
+https://www.figma.com/design/UIU4AFOIREDVb8UtpKKCfk/High-Fidelity-Sketch?node-id=0-1&t=V501vtRslxr3V8kA-1
 
 ## 4 JavaScript Usages:
 
