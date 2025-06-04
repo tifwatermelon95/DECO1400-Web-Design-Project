@@ -1,5 +1,8 @@
 # DECO1400 - Dress Hiring Website Implementation
 
+## Link to Figma High-Fidelity Prototype:
+https://www.figma.com/proto/UIU4AFOIREDVb8UtpKKCfk/High-Fidelity-Sketch?node-id=0-1&t=JxMcOIzfiZ0xLgC4-1
+
 ## 4 JavaScript Usages:
 
 - HOMEPAGE - Implementation of horizontal scrolling carousel for the dress section of the Homepage when users click on the back and next buttons.
