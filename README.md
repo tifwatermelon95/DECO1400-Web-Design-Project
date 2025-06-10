@@ -90,7 +90,4 @@ Making a Dropdown Menu:
 - https://www.youtube.com/watch?v=g_vXSKbfUiQ 
 
 
-## Github:
-https://github.com/tifwatermelon95
-
 
